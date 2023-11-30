@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+body {
+  text-align: center;
+}
+
+h2 {
+  color: #9C6C43;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+header {
+  min-height: 100vh;
+  background: url(/assets/img/bg-slider-06.jpg);
+  background-position: center;
+  background-size: cover;
+}
+header .Top-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+header .Top-header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #EEEEEE;
+}/*# sourceMappingURL=index.css.map */
