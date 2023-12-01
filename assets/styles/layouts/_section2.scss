@@ -1,0 +1,86 @@
+.section2{
+    color: $white;
+    padding-bottom: 100px;
+    position: relative;
+
+    &::after{
+        content: "";
+        position: absolute;
+        height: 620px;
+        width: 100%;
+        left: 50%;
+        bottom:-330px;
+        transform: translate(-50%,-50%);
+        background: url(../img/bg-menu-01.jpg) center/cover;
+    }
+    h2{
+        font-family: $font1;
+        color: $color1;
+        font-size: 2rem;
+        font-weight: 500;
+        padding: 60px 0 30px;
+    }
+    ul{
+        margin: 30px auto;
+        min-width: 500px;
+        width: 50%;
+        @include alignChildren(space-around);
+        
+        li{
+            border-bottom: 1px solid $gray;
+            padding-bottom: 8px;
+        }
+    }
+    .meals{
+        background: $white;
+        color: $black;
+        width: 85%;
+        max-width: 800px;
+        margin: 0 auto;
+        border-top: 4px solid $color1;
+        padding: 15px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        position: relative;
+        z-index: 100;
+
+        .meal{
+            display: grid;
+            grid-template-columns: 25% 65% 15%;
+            border-bottom: 1px dashed $gray;
+            padding: 30px 0;
+            margin: 0 20px;
+
+            img{
+                border-radius: 50%;
+                object-fit: cover;
+                width: 100%;
+                align-self: center;
+            }
+            .meal-text{
+                text-align: left;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                margin: 0 10px;
+                height: 100%;
+
+                h3{
+                    text-transform: uppercase;
+                    color: $black;
+                    font-size: 0.8rem;
+                    font-weight: 900;
+                    margin-bottom: 5px;
+                }
+            }
+            >p {
+                color: $color1;
+                font-weight: 600;
+                display: grid;
+                align-items: center;
+                font-size: 1rem;
+                height: 100%;
+            }
+        }
+    }
+}

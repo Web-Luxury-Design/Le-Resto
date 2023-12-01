@@ -46,6 +46,21 @@ header{
                 font-size: 3rem;
                 color: $color1;
             }
+            h1{
+                font-size: 3.2rem;
+                letter-spacing: 10px;
+                font-family: $font2;
+                margin-top: -28px;
+            }
+            img{
+                height: 27px;
+                margin: 32px 0;
+            }
+            h6{
+                letter-spacing: 6px;
+                font-weight: 100;     
+                font-size: 0.75rem;           
+            }
         }
     }
 }
