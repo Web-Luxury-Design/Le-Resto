@@ -1,32 +1,8 @@
-$beige:#9C6C43;
-$creamWhite:#928578;
-$white:#EEEEEE;
-$black:#161616;
-
-*{
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-body{
-    text-align: center;
-}
-h2{
-    color: $beige;
-}
-h3{
-    text-transform: uppercase;
-}
-header{
-    min-height: 100vh;
-    background: url(/assets/img/bg-slider-06.jpg);
-    background-position: center;
-    background-size: cover;
-    .Top-header{
-        display: flex;
-        ul{
-            display: flex;
-            color: $white;
-        }
-    }
-}
+@import "./setting";
+@import "./layouts/header";
+@import "./layouts/section1";
+@import "./layouts/section2";
+@import "./layouts/section3";
+@import "./layouts/section4";
+@import "./layouts/section5";
+@import "./layouts/footer";
