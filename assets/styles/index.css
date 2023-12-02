@@ -43,6 +43,11 @@ header nav {
   max-width: 1100px;
   margin: 0 auto;
 }
+@media screen and (max-width: 680px) {
+  header nav {
+    grid-template-columns: 50% 10% 40%;
+  }
+}
 header nav .logo {
   font-family: Allura, cursive;
   font-size: 2rem;
@@ -60,6 +65,11 @@ header nav ul {
   text-transform: uppercase;
   font-size: 0.7rem;
   padding: 0 30px;
+}
+@media screen and (max-width: 680px) {
+  header nav ul {
+    visibility: hidden;
+  }
 }
 header nav .nav-icons {
   display: -webkit-box;
@@ -107,6 +117,12 @@ header .header-text div h1 {
   font-family: Poppins, serif;
   margin-top: -28px;
 }
+@media screen and (max-width: 680px) {
+  header .header-text div h1 {
+    font-size: 2rem;
+    margin-top: -15px;
+  }
+}
 header .header-text div img {
   height: 27px;
   margin: 32px 0;
@@ -121,6 +137,11 @@ header .header-text div h6 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   background: #eee;
+}
+@media screen and (max-width: 680px) {
+  .section1 {
+    grid-template-columns: 1fr;
+  }
 }
 .section1 .intro-text {
   margin: 15px;
@@ -151,6 +172,11 @@ header .header-text div h6 {
 }
 .section1 .intro-picture {
   background: url(../img/store-01.jpg) center/cover;
+}
+@media screen and (max-width: 680px) {
+  .section1 .intro-picture {
+    display: none;
+  }
 }
 
 .section2 {
@@ -189,9 +215,17 @@ header .header-text div h6 {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
+@media screen and (max-width: 680px) {
+  .section2 ul {
+    min-width: 200px;
+    width: 90%;
+    font-size: 0.65rem;
+  }
+}
 .section2 ul li {
   border-bottom: 1px solid rgb(182, 182, 182);
   padding-bottom: 8px;
+  cursor: pointer;
 }
 .section2 .meals {
   background: #eee;
@@ -205,6 +239,11 @@ header .header-text div h6 {
   grid-template-columns: 1fr 1fr;
   position: relative;
   z-index: 100;
+}
+@media screen and (max-width: 680px) {
+  .section2 .meals {
+    grid-template-columns: 1fr;
+  }
 }
 .section2 .meals .meal {
   display: grid;
@@ -264,6 +303,11 @@ header .header-text div h6 {
   background: #eee;
   max-width: 1050px;
   margin: 0 auto;
+}
+@media screen and (max-width: 850px) {
+  .section3 .form-content {
+    grid-template-columns: 1fr;
+  }
 }
 .section3 .form-content .hours {
   padding: 24px;
@@ -331,6 +375,11 @@ header .header-text div h6 {
   grid-template-columns: 1fr 1fr 1fr;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 680px) {
+  .section3 .form-content .form-infos .form-inputs {
+    grid-template-columns: 1fr;
+  }
+}
 .section3 .form-content .form-infos .form-inputs > * {
   padding: 10px 0;
   margin: 10px;
@@ -360,6 +409,11 @@ header .header-text div h6 {
 
 .section4 {
   padding: 50px 20px 90px;
+}
+@media screen and (max-width: 680px) {
+  .section4 {
+    display: none;
+  }
 }
 .section4 .events-container {
   max-width: 1000px;
@@ -560,6 +614,11 @@ footer .footer-content .left-part {
   padding: 65px 30px 65px 32px;
   line-height: 30px;
 }
+@media screen and (max-width: 680px) {
+  footer .footer-content .left-part {
+    display: none;
+  }
+}
 footer .footer-content .left-part h2 {
   font-family: Allura, cursive;
   font-size: 2.5rem;
@@ -576,8 +635,18 @@ footer .footer-content .right-part {
   display: grid;
   grid-template-rows: 1fr 1fr;
 }
+@media screen and (max-width: 680px) {
+  footer .footer-content .right-part {
+    padding-left: 20px;
+  }
+}
 footer .footer-content .right-part h3 {
   font-size: 0.85rem;
+}
+@media screen and (max-width: 680px) {
+  footer .footer-content .right-part h3 {
+    display: none;
+  }
 }
 footer .footer-content .right-part input {
   margin-top: 15px;
@@ -585,6 +654,11 @@ footer .footer-content .right-part input {
   border: 1px solid rgba(166, 114, 69, 0.15);
   width: 250px;
   padding: 7px 13px;
+}
+@media screen and (max-width: 680px) {
+  footer .footer-content .right-part input {
+    width: 150px;
+  }
 }
 footer .footer-content .right-part .follow-us {
   display: -webkit-box;
@@ -610,9 +684,9 @@ footer .footer-content .right-part .follow-us ul {
 footer .footer-content .right-part .follow-us ul i {
   -webkit-transition: 0.25s ease-in-out;
   transition: 0.25s ease-in-out;
+  cursor: pointer;
 }
 footer .footer-content .right-part .follow-us ul i:hover {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
-  cursor: pointer;
 }/*# sourceMappingURL=index.css.map */

@@ -3,6 +3,10 @@
     grid-template-columns: 1fr 1fr;
     background: $white;
 
+    @media screen and (max-width:680px) {
+        grid-template-columns: 1fr;
+    }
+
     .intro-text{
         margin: 15px;
         border: 1px dashed $color1;
@@ -33,5 +37,9 @@
     }
     .intro-picture{
         background: url(../img/store-01.jpg) center/cover;
+
+        @media screen and (max-width:680px) {
+            display: none;
+        }
     }
 }

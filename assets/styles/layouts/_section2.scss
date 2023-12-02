@@ -25,10 +25,17 @@
         min-width: 500px;
         width: 50%;
         @include alignChildren(space-around);
+
+        @media screen and (max-width:680px) {
+            min-width: 200px;
+            width: 90%;
+            font-size: 0.65rem;
+        }
         
         li{
             border-bottom: 1px solid $gray;
             padding-bottom: 8px;
+            cursor: pointer;
         }
     }
     .meals{
@@ -43,6 +50,10 @@
         grid-template-columns: 1fr 1fr;
         position: relative;
         z-index: 100;
+
+        @media screen and (max-width:680px) {
+            grid-template-columns: 1fr;
+        }
 
         .meal{
             display: grid;
